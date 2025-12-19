@@ -6,7 +6,6 @@ import { useContext, useEffect, useState } from "react";
 import SocialSignIn from "../SocialSignIn";
 import toast, { Toaster } from 'react-hot-toast';
 import AuthDialogContext from "@/app/context/AuthDialogContext";
-import Logo from "@/components/Layout/Header/BrandLogo/Logo";
 
 const Signin = ({ signInOpen }: { signInOpen?: any }) => {
   const { data: session } = useSession();
@@ -45,9 +44,6 @@ const Signin = ({ signInOpen }: { signInOpen?: any }) => {
 
   return (
     <>
-      <div className="mb-10 text-center flex justify-center">
-        <Logo />
-      </div>
 
       <SocialSignIn />
 
